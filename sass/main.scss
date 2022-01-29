@@ -1,14 +1,16 @@
+@import "./base/commons";
 @import "./base/reset";
 @import "./base/visually-hidden";
 @import "./utils/mixim";
 @import "./utils/place-holder";
-@import "./base/commons";
-@import "./components/header";
-@import "./components/hero";
+@import "./components/footer";
+
+@import "./components/product";
+    
 
 
-.logo{
-    width: 107px;
-    height: 47px;
-    color: currentColor;
-}
+
+
+
+
+
