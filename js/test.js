@@ -130,27 +130,6 @@ makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 4);
 makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus', 'Venus'], 0);
 
 
-function calculateTotal(number) {
-  // Change code below this line
-  sum = 0;
-  for (let i = 0; i <= number; sum += i++);
-
-  console.log(sum)
-  return sum;
-
- 
-
-  // for (let i = 0; i <= number; i += 1 );
-
-  // Change code above this line
-}
-calculateTotal(1);
-calculateTotal(3);
-calculateTotal(7);
-calculateTotal(18);
-calculateTotal(24);
-calculateTotal();
-
 a = 2;
 b = 4;
 
@@ -206,7 +185,116 @@ let total = 0;
 for (const number of numbers) {
   console.log(number);
   if (number % 2 === 0) {
-    console.log('четное!!!');
+    console.log('четноеfffff!!!');
     total += number;
   }
 }
+
+//2-19
+
+const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+for (let i = 0; i < fruits.length; i += 1) {
+  // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
+}
+
+
+
+//2-21
+// function findLongestWord(str) {
+//   // Change code below this line
+
+//   return str.split(' ').reduce((a, b) => (b.length > a.length ? b : a));
+// }
+
+// console.log(findLongestWord);
+
+// // Change code above this line
+// findLongestWord('The quick brown fox jumped over the lazy dog');
+// findLongestWord('Google do a roll');
+// findLongestWord('May the force be with you');
+
+
+
+// function findLongestWord(string) {
+//   // Change code below this line
+
+//   let bigestWord = string.split(' ')[0];
+//   for (const argument of string.split(' ')) {
+//     if (argument.length > bigestWord.length) {
+//       bigestWord = argument;
+//     }
+//   }
+  
+//   return bigestWord;
+// }
+
+// // Change code above this line
+// findLongestWord('The quick brown fox jumped over the lazy dog');
+// findLongestWord('Google do a roll');
+// findLongestWord('May the force be with you');
+
+2/22
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+  for (let i = min; i <= max; i++) {
+    numbers.push(i);
+    numbers.push(66);
+  }
+  console.log(numbers);
+  // Change code above this line
+  return numbers;
+}
+createArrayOfNumbers(1, 3);
+createArrayOfNumbers(14, 17);
+createArrayOfNumbers(29, 34);
+
+
+
+
+
+
+
+ 
+
+const cartss1 = [51, 32, 3, 45, 55, 77, 11];
+let totalssа = 0;
+
+for (let i = 0; i < cartss1.length; i += 1){
+    
+    totalssа = totalssа + cartss1[i];
+}
+
+
+console.log(totalssа)
+
+
+const cartss = [51, 32, 3, 45, 55, 77, 1];
+let totalss = 0;
+
+for (const value of cartss) {
+  totalss += value;
+}
+console.log('Total:', totalss)
+
+
+
+
+ login['334'];
+
+const findLogin = function (allogins, password) {
+  return allogins.includes(password)
+    ? `user ${password} find`
+    : `user ${password} not find`;
+}
+
+
+
+console.log(findLogin('login', '334' ));
+console.log(findLogin('login', '443q32'));
+console.log(findLogin('login', '42q4q24'));
+console.log(findLogin('login', '42q4q24'));
