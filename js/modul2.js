@@ -1,4 +1,4 @@
-// 13--2
+// // 13--2
 // const apartment = {
 //   descr: 'Spacious apartment in the city center',
 //   rating: 4,
@@ -160,7 +160,7 @@
 //   rgbColors.push(rgb);
 // }
 
-//////////////////////////25 --2 
+//////////////////////////25 --2
 // function calculateMeanTemperature(forecast) {
 //   const {
 //     today: { low: todayLow, high: todayHigh },
@@ -170,18 +170,93 @@
 //   // Change code above this line
 //   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
 // }
+//////////////////28--2
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
 
 
-const firstGroupScores = [64, 42, 93];
-const secondGroupScores = [89, 14, 51, 26];
-const thirdGroupScores = [29, 47, 18, 97, 81];
-// Change code below this line
-const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
-const bestScore = Math.max(...allScores);
-const worstScore = Math.min(...allScores);
+// console.log(...allScores);
+
+/*  */
+
+///////////////////32--2
+// function addOverNum(value, ...args) {
+//   let total = 0;
+
+//     for (const arg of args) {
+//       if(arg > value)
+//     total += arg;
+//   }
+//   return total;
+
+//   // Change code above this line
+// }
+// console.log(addOverNum(50, 15, 27));
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// console.log(addOverNum(15, 32, 6, 13, 19, 8));
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
 
 
-console.log(...allScores);
+////33-2
 
+// function findMatches(numbers, ...args) {
+//   const matches = []; // Don't change this line
+// for (const arg of args){
+//    if(numbers.includes(arg)){
+//   matches.push(arg);}
+// }
+//   // Change code above this line
+//   return matches;
+// }
+// findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7)
+// findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2)
+// findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41)
+// findMatches([63, 11, 8, 29], 4, 7, 16)
 
-
+/////////////41-3
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Speed potion', price: 460 },
+//     { name: 'Dragon breath', price: 780 },
+//     { name: 'Stone skin', price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     for (const potion of this.potions) {
+//       if (potion.name === newPotion.name) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//       }
+//     }
+//     this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     const { potions } = this;
+//     for (let i = 0; i < potions.length; i += 1) {
+//       const potion = potions[i];
+//       if (potionName === potion.name) {
+//         potions.splice(i, 1);
+//       }
+//     }
+//     return `Potion ${potionName} is not in inventory!`;
+//   },
+//   updatePotionName(oldName, newName) {
+//     for (const potion of this.potions) {
+//       const { name } = potion;
+//       if (name === oldName) {
+//         potion.name = newName;
+//         return;
+//       }
+//     }
+//     return `Potion ${oldName} is not in inventory!`;
+//   },
+//   // Change code above this line
+// };

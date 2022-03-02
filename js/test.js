@@ -1,30 +1,30 @@
 
 
 
-const age = 21;
-const type = age >= 18 ? 'adult' : 'child';
-console.log(type);
+// const age = 21;
+// const type = age >= 18 ? 'adult' : 'child';
+// console.log(type);
 
 
-let a = 10;
-let b = 2;
-total = a + b;
-console.log(total);
+// let a = 10;
+// let b = 2;
+// total = a + b;
+// console.log(total);
 
-function includes(array, value) {
-  // Change code below this line
-  for (const arrays of array) {
-    if (arrays == value) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-}
-includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Jupiter');
-includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Uranus');
-includes(['apple', 'plum', 'pear', 'orange'], 'plum');
-includes(['apple', 'plum', 'pear', 'orange'], 'kiwi');
+// function includes(array, value) {
+//   // Change code below this line
+//   for (const arrays of array) {
+//     if (arrays == value) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// }
+// includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Jupiter');
+// includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Uranus');
+// includes(['apple', 'plum', 'pear', 'orange'], 'plum');
+// includes(['apple', 'plum', 'pear', 'orange'], 'kiwi');
 
 
 
