@@ -73,6 +73,11 @@ img {
 }
 
 .test {
-  color: red;
+  color: blue;
+}
+
+body {
+  padding: 16px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
