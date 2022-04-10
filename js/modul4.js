@@ -265,7 +265,11 @@
 /////4.26
 // const getActiveUsers = (users) => users.filter(user => user.isActive )
    
-// ;
+// ;В роботу
+
+
+Copilit
+
 
 ///4.27
 // const getInactiveUsers = (users) => users.filter(user => user.isActive === !true)
