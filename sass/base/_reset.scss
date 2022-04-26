@@ -1,33 +1,33 @@
 *,
 *::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-
-
+a {
+  text-decoration: none;
 }
 
 ul li {
-list-style: none;
+  list-style: none;
 }
 
-button{
-    border: none;
+button {
+  border: none;
+  
+  
 }
 
-input , textarea {
-    outline: none;
+input,
+textarea {
+  outline: none;
 }
 
 img {
-    max-width: 100%;
-    display: block;
-    height: auto;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 

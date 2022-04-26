@@ -3,8 +3,6 @@ const targetBtn = document.querySelector('.js-target-btn');
 const addListenedBtn = document.querySelector('.js-add-listened');
 const RemoveListenerBtn = document.querySelector('.js-remove-listener');
 
-
-
 addListenedBtn.addEventListener('click', () => {
   console.log('вешаю слюшетеля собитий');
   
@@ -21,30 +19,7 @@ function onTargetBtnClick() {
   console.log('клик по кнопке');
 }
 
-///////////////////////////////////////////////Патерн обем сьілок////////////////////////////////////////
 
- 
-const input = document.querySelector('.js-input');
-const nameLabel = document.querySelector('.js-button > span');
-const licenseCheckbox = document.querySelector('.js-license');
-const btn = document.querySelector('.js-button');
-/// инпут
-input.addEventListener('input', onInputChange)
-licenseCheckbox.addEventListener('change' , onLicenseChange)
-
-///чекбокс
-licenseCheckbox.addEventListener('change', onListener);
-function onListener() {
-  console.log(' я нажьімаю ');
-}
-
-function onInputChange(event) {
-  nameLabel.textContent = event.currentTarget.value;
-}
-
-function onLicenseChange(event) {
-  btn.disabled = !event.currentTarget.checked;
-}
 
 
 //  --------------------Перебор масива--------------------!!!!!!!!!
@@ -59,59 +34,66 @@ const elem = document.querySelectorAll('li')
 //   console.log(item);
 // });
 
-
-const list = document.querySelector('.usernames');
-console.log(list);
+/////////////////////////////////////////////////  7 модуль Задача 1
 
 
-const lastitem = document.createElement('li')
-lastitem.textContent = ' Poly'
-list.append(lastitem);
+// const galleryItemsContainer = document.querySelector(".gallery");
+// const galleryItemsMarkup = createGalleryItemsMarkup(galleryItems);
+// galleryItemsContainer.insertAdjacentHTML("beforeend", galleryItemsMarkup);
+
+// galleryItemsContainer.addEventListener("click", onClickGalleryItems);
+
+// function createGalleryItemsMarkup(items) {
+//   return galleryItems
+//     .map(({ preview, original, description }) => {
+//       return `<div class="gallery__item">
+// <a class="gallery__link" href="${original}">
+//     <img
+//     class="gallery__image"
+//     src="${preview}"
+//     data-source="${original}"
+//     alt="${description}"
+//     />
+// </a>
+// </div>`;
+//     })
+//       .join("");
+    
+   
+// }
+
+// function onClickGalleryItems(event) {
+//   event.preventDefault();
+//   const galleryImageEl = event.target.classList.contains("gallery__image");
+//   if (!galleryImageEl) {
+//     return;
+//   }
+//   const urlSource = event.target.dataset.source;
+//   createModal(urlSource);
+// }
+// function createModal(x) {
+//   const instance = basicLightbox.create(
+//     `
+//     <div class="modal">
+// <img src="${x}"/>
+//     </div>
+// `,
+//     {
+//       onShow: (instance) => {
+//         document.addEventListener("keydown", onEscClose);
+//         function onEscClose(e) {
+//           if (e.code == "Escape") {
+//             instance.close();
+//             document.removeEventListener("keydown", onEscClose);
+//           }
+//         }
+//       },
+//     }
+//   );
+
+//   instance.show();
+// }
 
 
-const firstItem = document.createElement('li')
-firstItem.textContent = 'Ajax'
-list.prepend(firstItem);
-
-const title = document.createElement('h1')
-title.textContent = 'USERNAMES';
-list.before(title)
-
-const text = document.createElement('p')
-text.classList.add('text__list')
-text.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'
-list.after(text)  
-console.log(text);
-
-
-
-// ## Example 3 - Калькулятор
-
-// Создайте объект `calculator` с тремя методами:
-
-// - `read(a, b)`- принимает два значения и сохраняет их как свойства объекта.
-// - `add()` - возвращает сумму сохранённых значений.
-// - `mult()` - перемножает сохранённые значения и возвращает результат.
-
-// ```js
-// const calculator = {};
-// ```
-
-
-
-/////////////DZ-2
-const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Condiments'];
-
-
-
-const elements = ingredients.map(option => {
-  const navItemEl = document.createElement('li');
-  navItemEl.textContent = option;
-  navItemEl.classList.add('item');
-
-  return navItemEl;
-});
-console.log(elements);
-document.querySelector('#ingredients').append(...elements);
 
 

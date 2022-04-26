@@ -1,20 +1,14 @@
-@import "./base/commons";
-@import "./base/reset";
-@import "./base/visually-hidden";
-@import "./utils/place-holder";
+@import './base/commons';
+@import './base/reset';
+@import './base/visually-hidden';
+@import './utils/place-holder';
 
-
-.test{
-    color: blue;
+.test {
+  color: red;
+  font-size: 30px;
 }
-    
+
 body {
   padding: 16px;
   text-align: center;
 }
-
-
-
-
-
-
