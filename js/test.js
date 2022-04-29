@@ -37,13 +37,17 @@ const elem = document.querySelectorAll('li')
 /////////////////////////////////////////////////  7 модуль Задача 1
 
 
+
+// import { galleryItems } from "./gallery-items.js";
+// // Change code below this line
+// console.log(galleryItems);
+
 // const galleryItemsContainer = document.querySelector(".gallery");
-// const galleryItemsMarkup = createGalleryItemsMarkup(galleryItems);
-// galleryItemsContainer.insertAdjacentHTML("beforeend", galleryItemsMarkup);
+// const cardsMarcup = createColorCardsMarkup(galleryItems);
+// galleryItemsContainer.insertAdjacentHTML("beforeend", cardsMarcup);
+// galleryItemsContainer.addEventListener("click", onClickGallery);
 
-// galleryItemsContainer.addEventListener("click", onClickGalleryItems);
-
-// function createGalleryItemsMarkup(items) {
+// function createColorCardsMarkup(galleryItems) {
 //   return galleryItems
 //     .map(({ preview, original, description }) => {
 //       return `<div class="gallery__item">
@@ -57,36 +61,31 @@ const elem = document.querySelectorAll('li')
 // </a>
 // </div>`;
 //     })
-//       .join("");
-    
-   
+//     .join("");
 // }
 
-// function onClickGalleryItems(event) {
-//   event.preventDefault();
-//   const galleryImageEl = event.target.classList.contains("gallery__image");
-//   if (!galleryImageEl) {
+
+
+// function onClickGallery(event) {
+//   const isGalleryImageEl = event.target.classList.contains("gallery__image");
+//   if (!isGalleryImageEl) {
 //     return;
 //   }
-//   const urlSource = event.target.dataset.source;
-//   createModal(urlSource);
-// }
-// function createModal(x) {
+//   event.preventDefault();
+
 //   const instance = basicLightbox.create(
 //     `
-//     <div class="modal">
-// <img src="${x}"/>
-//     </div>
-// `,
+//       <img src="${event.target.dataset.source}">
+//       `,
 //     {
 //       onShow: (instance) => {
-//         document.addEventListener("keydown", onEscClose);
-//         function onEscClose(e) {
-//           if (e.code == "Escape") {
-//             instance.close();
-//             document.removeEventListener("keydown", onEscClose);
+//         const listener = function (event) {
+//           if (event.key === "Escape") {
+//             document.removeEventListener("keydown", listener);
+//             return instance.close();
 //           }
-//         }
+//         };
+//         document.addEventListener("keydown", listener);
 //       },
 //     }
 //   );
@@ -97,3 +96,11 @@ const elem = document.querySelectorAll('li')
 
 
 
+localStorage.setItem('ui-theme', 'light');
+localStorage.setItem('sidebar', 'expanded');
+localStorage.setItem('notification-level', 'mute');
+
+localStorage.setItem("ui-theme", "dark");
+
+const theme = localStorage.getItem("ui-theme");
+console.log(theme); 
